@@ -5,32 +5,32 @@ html, body {
   }
   
   body > * {
-    border:3px solid #8bc34a;
+    border:5px solid #F1BEE9;
   }
   
   body > header, body > footer {
-    background:#444;
-    color:#8bc34a;
+    background:hotpink;
+    color:#F1BEE9;
     height: 70px;
     line-height:70px;
     text-align:center;
   }
   
   main {
-    background: #444;
+    background:pink;
   }
   
   main > .content {
-    background: #444;;
+    background: pink;;
   }
   
   main > aside {
-    background: #444;;
+    background: pink;;
     height: 100%
   }
   
   main > nav {
-    background: #444;;
+    background: pink;;
     height: 100%;
     font-size: 1.25em;
   }
@@ -43,11 +43,11 @@ html, body {
   }
   
   .deck {
-    background: #824AC3;
+    background:powderblue;
   }
   
   .deck:first-child {
-    border-bottom: 3px solid #8bc34a
+    border-bottom: 3px solid blueviolet
   }
   
   
@@ -63,18 +63,18 @@ html, body {
     flex-direction: column;
     justify-content: flex-start;
     align-items:flex-start;
-    background-color: #444;
+    background-color: pink;
   }
   
   
   a:link {
-    color: #8bc34a;
+    color: purple;
     background-color: transparent;
     text-decoration: none;
   }
   
   a:visited {
-    color: #4A8BC3;
+    color: ghostwhite;
     background-color: transparent;
     text-decoration: none;
   }
