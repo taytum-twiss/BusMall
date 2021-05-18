@@ -5,32 +5,32 @@ html, body {
   }
   
   body > * {
-    border:5px solid #F1BEE9;
+    border:5px solid purple;
   }
   
   body > header, body > footer {
-    background:hotpink;
-    color:#F1BEE9;
+    background:lightgray;
+    color:black;
     height: 70px;
     line-height:70px;
     text-align:center;
   }
   
   main {
-    background:pink;
+    background:lightgray;
   }
   
   main > .content {
-    background: pink;;
+    background: lightgray;;
   }
   
   main > aside {
-    background: pink;;
+    background: lightgray;;
     height: 100%
   }
   
   main > nav {
-    background: pink;;
+    background:lightgray;;
     height: 100%;
     font-size: 1.25em;
   }
@@ -43,11 +43,11 @@ html, body {
   }
   
   .deck {
-    background:powderblue;
+    background:darkgray;
   }
   
   .deck:first-child {
-    border-bottom: 3px solid blueviolet
+    border-bottom: 3px solid purple
   }
   
   
@@ -63,7 +63,7 @@ html, body {
     flex-direction: column;
     justify-content: flex-start;
     align-items:flex-start;
-    background-color: pink;
+    background-color: lightgray;
   }
   
   
