@@ -5,32 +5,32 @@ html, body {
   }
   
   body > * {
-    border:5px solid purple;
+    border:5px solid darkcyan;
   }
   
   body > header, body > footer {
-    background:lightgray;
-    color:black;
+    background:#AFAEB3;
+    color: black;
     height: 70px;
     line-height:70px;
     text-align:center;
   }
   
   main {
-    background:lightgray;
+    background:#AFAEB3;
   }
   
   main > .content {
-    background: lightgray;;
+    background: #AFAEB3;;
   }
   
   main > aside {
-    background: lightgray;;
+    background: #AFAEB3;;
     height: 100%
   }
   
   main > nav {
-    background:lightgray;;
+    background:#AFAEB3;;
     height: 100%;
     font-size: 1.25em;
   }
@@ -43,11 +43,11 @@ html, body {
   }
   
   .deck {
-    background:darkgray;
+    background:#96939B;
   }
   
   .deck:first-child {
-    border-bottom: 3px solid purple
+    border-bottom: 3px solid darkcyan;
   }
   
   
@@ -63,12 +63,12 @@ html, body {
     flex-direction: column;
     justify-content: flex-start;
     align-items:flex-start;
-    background-color: lightgray;
+    background-color: #AFAEB3;
   }
   
   
   a:link {
-    color: purple;
+    color: black;
     background-color: transparent;
     text-decoration: none;
   }
@@ -80,7 +80,7 @@ html, body {
   }
   
   a:hover {
-    color: #824AC3;
+    color: darkcyan;
     background-color: transparent;
     text-decoration: underline;
   }
