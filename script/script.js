@@ -28,16 +28,6 @@ let clicks = 0;
 
 // On startup - display 3 images from the array
 function renderImages() {
-  // this funtion will render 3 images from the array
-  // go grab the html item to attach the 3 images to
-  // 1. get the element from html that we want to attach the image to (getElementById, or querySelector)
-  // 2. create an image element (createElement)
-  // 3. set the src property of the img element to the imgURL property of the item
-  // 4. append the newly created img to the div element (appendChild)
-
-  // let img1Container = document.getElementById('img1Container');
-  // let img2Container = document.getElementById('img2Container');
-  // let img3Container = document.getElementById('img3Container');
 
   for (let i=0; i <= 2; i++) {
     // let imgContainer = document.getElementById('img' + i + 'Container');
@@ -47,8 +37,11 @@ function renderImages() {
     imgContainer.appendChild(img);
     img.setAttribute('src', PRODUCTS_ARRAY[i].imgURL);
     img.setAttribute('id', PRODUCTS_ARRAY[i].HTMLid);
+    img.setAttribute('class', 'item');
 
     //whenever the image is shown, we need to add one to the total view
+    PRODUCTS_ARRAY[i].totalViews++;
+    console.log('total views', PRODUCTS_ARRAY[i].HTMLid,PRODUCTS_ARRAY[i].totalViews)
   }
 
 }
@@ -58,14 +51,18 @@ function handleClick(event) {
   // put all the callbacks into one place
   clicks++;
   console.log('I was clicked, and my id is: ', event.target.id)
-  let parentId = event.target.id;
+  let imageid = event.target.id;
 
   // when the parent container is clicked, how do i know which image it is ???
   // we have to compare the id's
   // if then else statement.. compare parentId to image id somehow.. 
-
-
-
+  //if parentid == 0,1, 2 - array[0], or array[1], array[2]
+  for (let i=0; i < PRODUCTS_ARRAY.length; i++) {
+    if ( imageid === PRODUCTS_ARRAY[i].HTMLid) {
+      PRODUCTS_ARRAY[i].totalVotes++
+      console.log('total votes ', PRODUCTS_ARRAY[i].totalVotes);
+    }
+  }
 }
 
 (function startApp() {
