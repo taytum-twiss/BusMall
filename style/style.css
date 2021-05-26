@@ -1,3 +1,5 @@
+
+
 main {
 
     display: grid;
@@ -29,6 +31,8 @@ main {
     justify-content: center;
     align-items: center;
   }
+
+
   
   .imgCards {
     height: 250px;
@@ -36,7 +40,11 @@ main {
     background: lightgray;
     text-align: center;
   }
-  
+
+  .item {
+    height: 100%;
+    width: auto;
+  }
   
   main > aside {
     order: 3;
